@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ss3_baiTap2_thucHanhIf2</title>
+</head>
+<body>
+<script>
+    let name = prompt('Xin ban nhap ten');
+    if (name == 'Admin') {
+        let password = prompt('Xin nhap mat khau', '');
+        if (password == 'Master') {
+            alert('Welcome');
+        } else if (password == null || password == '') {
+            alert('Canceled');
+        } else {
+            alert('Wrong password');
+        }
+    } else if (name == null || name == '') {
+        alert('Canceled');
+    } else {
+        alert('I dont know you');
+    }
+
+</script>
+</body>
+</html>
